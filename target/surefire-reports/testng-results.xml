@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.google.SimpleGoogleSearchTest" duration-ms="6815" started-at="2017-11-07T19:35:24Z" finished-at="2017-11-07T19:35:31Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="6815" started-at="2017-11-07T19:35:24Z" finished-at="2017-11-07T19:35:31Z">
+      <class name="com.google.SimpleGoogleSearchTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.google.SimpleGoogleSearchTest@783e6358]" name="setUp" is-config="true" duration-ms="5632" started-at="2017-11-07T21:35:25Z" finished-at="2017-11-07T21:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchTest()[pri:0, instance:com.google.SimpleGoogleSearchTest@783e6358]" name="searchTest" duration-ms="1157" started-at="2017-11-07T21:35:30Z" finished-at="2017-11-07T21:35:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+      </class> <!-- com.google.SimpleGoogleSearchTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.google.SimpleGoogleSearchTest -->
+</testng-results>
