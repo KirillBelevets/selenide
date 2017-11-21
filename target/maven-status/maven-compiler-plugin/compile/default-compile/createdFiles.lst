@@ -1,0 +1,4 @@
+selenide\pages\google\SearchResultPage.class
+selenide\util\PropertiesCache.class
+selenide\core\SelenideTestBase.class
+selenide\pages\google\SearchPage.class

@@ -11,9 +11,13 @@
         <selenide.version>4.8</selenide.version>
         <testng.version>6.11</testng.version>
         <webdrivermanager.version>1.7.2</webdrivermanager.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-<dependencies>
-    <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
+
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
     <dependency>
         <groupId>com.codeborne</groupId>
         <artifactId>selenide</artifactId>
@@ -24,7 +28,7 @@
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
         <version>6.11</version>
-        <scope>test</scope>
+
     </dependency>
     <dependency>
 
@@ -35,5 +39,6 @@
         <version>${webdrivermanager.version}</version>
 
     </dependency>
+
 </dependencies>
 </project>
