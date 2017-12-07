@@ -1,11 +1,15 @@
 package com.google;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.By;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import selenide.core.SelenideTestBase;
 import selenide.pages.google.SearchPage;
 import selenide.pages.google.SearchResultPage;
+import selenium.SeleniumWebDriverBase;
 
 import static com.codeborne.selenide.CollectionCondition.size;
 
@@ -15,8 +19,9 @@ import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
 import static selenide.util.PropertiesCache.getProperty;
 
-
-public class SelenideGoogleSearchTest extends SelenideTestBase {
+@Feature("Search Test")
+@Story("STORY-111")
+public class SelenideGoogleSearchTest extends SeleniumWebDriverBase {
     private String searchText = getProperty("searchtext");
     private String url = getProperty("url");
     private int sizeList = Integer.parseInt(getProperty("size"));
@@ -27,6 +32,7 @@ public class SelenideGoogleSearchTest extends SelenideTestBase {
         $(By.name("q")).val(searchText).submit();
         $$("#ires .srg .g").shouldHave(size(10));
     }
+
 
     @Test
     public void pageObjectSearchTest () {

@@ -1,4 +1,5 @@
 com\gmail\GmailTest.class
 com\google\SimpleGoogleSearchTest.class
-com\google\SelenideRosetkaIPhone8.class
+guruTest\LoginTest.class
 com\google\SelenideGoogleSearchTest.class
+com\google\SelenideRosetkaIPhone8.class

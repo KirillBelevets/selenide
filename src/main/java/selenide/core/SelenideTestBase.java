@@ -5,11 +5,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import com.codeborne.selenide.Configuration;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+import org.testng.annotations.Listeners;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.FIREFOX;
 import static com.codeborne.selenide.WebDriverRunner.CHROME;
-
+@Listeners({selenium.core.ITestListenerClass.class})
 public class SelenideTestBase {
     private String browser = System.getProperty("browser", CHROME);
     @BeforeClass

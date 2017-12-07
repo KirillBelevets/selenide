@@ -5,6 +5,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -26,4 +27,5 @@ public class SelenideRosetkaIPhone8 {
         $(By.name("text")).val(searchText).submit();
         $(By.xpath(".//*[@id='catalog_goods_block']/div/div[1]/div[1]/div/div[1]")).should(visible, text("Apple iPhone 8 64GB Gold"));
     }
+
 }
